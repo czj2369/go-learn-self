@@ -14,7 +14,7 @@ GOLand版本：goland-2021.1.1.win
 
 下载完后安装，接着添加环境变量
 
-![image-20211220211723590](C:\Users\czj\AppData\Roaming\Typora\typora-user-images\image-20211220211723590.png)
+![image-20211220211723590](.\images\image-20211220211723590.png)
 
 
 
@@ -26,7 +26,7 @@ GOLand版本：goland-2021.1.1.win
 go version
 ```
 
-![image-20211220212114022](C:\Users\czj\AppData\Roaming\Typora\typora-user-images\image-20211220212114022.png)
+![image-20211220212114022](.\images\image-20211220212114022.png)
 
 
 
@@ -109,7 +109,7 @@ fmt.Println("Hello, World!") 向控制台打印Hello World
 go run .
 ```
 
-![image-20211220220210255](C:\Users\czj\AppData\Roaming\Typora\typora-user-images\image-20211220220210255.png)
+![image-20211220220210255](.\images\image-20211220220210255.png)
 
 参考资料：[`go run` command](http://docscn.studygolang.com/cmd/go/#hdr-Compile_and_run_Go_program)
 
@@ -139,11 +139,11 @@ func main() {
 go mod tidy
 ```
 
-![image-20211220221838609](C:\Users\czj\AppData\Roaming\Typora\typora-user-images\image-20211220221838609.png)
+![image-20211220221838609](.\images\image-20211220221838609.png)
 
 如果遇到无法下载的情况，可以使用以下命令解决
 
-![image-20211220221914116](C:\Users\czj\AppData\Roaming\Typora\typora-user-images\image-20211220221914116.png)
+![image-20211220221914116](.\images\image-20211220221914116.png)
 
 ```
 go env -w GO111MODULE=on
@@ -152,7 +152,7 @@ go env -w GOPROXY=https://goproxy.io,direct
 
 运行程序
 
-![image-20211220222001117](C:\Users\czj\AppData\Roaming\Typora\typora-user-images\image-20211220222001117.png)
+![image-20211220222001117](.\images\image-20211220222001117.png)
 
 此时打开go.mod文件，会发现新增内容
 
@@ -260,7 +260,7 @@ require example.com/greetings v0.0.0-00010101000000-000000000000
 
 参考资料：[Module version numbering](http://docscn.studygolang.com/doc/modules/version-numbers).
 
-​					[`require` directive](http://docscn.studygolang.com/doc/modules/gomod-ref#require)
+					[`require` directive](http://docscn.studygolang.com/doc/modules/gomod-ref#require)
 
 ## 5.返回并处理一个错误
 
@@ -326,7 +326,7 @@ func main() {
 
 参考资料：[`log` package](https://pkg.go.dev/log/)
 
-​					[`Fatal` function](https://pkg.go.dev/log?tab=doc#Fatal)
+					[`Fatal` function](https://pkg.go.dev/log?tab=doc#Fatal)
 
 ## 6.使用随机函数
 
@@ -374,7 +374,7 @@ func randomFormat() string {
 
 参考资料：[`math/rand` package](https://pkg.go.dev/math/rand/)
 
-​					[init Effective Go](http://docscn.studygolang.com/doc/effective_go.html#init)
+					[init Effective Go](http://docscn.studygolang.com/doc/effective_go.html#init)
 
 ## 7.使用数组参数
 
@@ -466,7 +466,7 @@ func main() {
 
 参考资料： [Go maps in action](https://docs.studygolang.com/blog/maps)
 
-​					[The blank identifier](http://docscn.studygolang.com/doc/effective_go.html#blank)
+					[The blank identifier](http://docscn.studygolang.com/doc/effective_go.html#blank)
 
 ## 8.单元测试
 
@@ -501,11 +501,11 @@ func TestHelloEmpty(t *testing.T) {
 
 通过命令 go test或者go test -v（获得详细的输出）可以执行该文件，结果如下
 
-![image-20211226215137324](C:\Users\czj\AppData\Roaming\Typora\typora-user-images\image-20211226215137324.png)
+![image-20211226215137324](.\images\image-20211226215137324.png)
 
 参考资料：[`Fatalf` method](https://pkg.go.dev/testing/#T.Fatalf)
 
-​					[`go test` command](http://docscn.studygolang.com/cmd/go/#hdr-Test_packages)
+					[`go test` command](http://docscn.studygolang.com/cmd/go/#hdr-Test_packages)
 
 ## 9.编译和安装
 
@@ -592,15 +592,15 @@ Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-
 
 打开postman，访问http://127.0.0.1:8090/albums，有正常数据返回
 
-![image-20211227001008625](C:\Users\czj\AppData\Roaming\Typora\typora-user-images\image-20211227001008625.png)
+![image-20211227001008625](.\images\image-20211227001008625.png)
 
 参考资料：[`gin.Context`](https://pkg.go.dev/github.com/gin-gonic/gin#Context)
 
-​					[`Context.IndentedJSON`](https://pkg.go.dev/github.com/gin-gonic/gin#Context.IndentedJSON)
-
-​					[`StatusOK`](https://pkg.go.dev/net/http#StatusOK)
-
-​					[`Context.JSON`](https://pkg.go.dev/github.com/gin-gonic/gin#Context.JSON)
+					[`Context.IndentedJSON`](https://pkg.go.dev/github.com/gin-gonic/gin#Context.IndentedJSON)
+	
+					[`StatusOK`](https://pkg.go.dev/net/http#StatusOK)
+	
+					[`Context.JSON`](https://pkg.go.dev/github.com/gin-gonic/gin#Context.JSON)
 
 ### 3.编写通过id查询专辑
 
@@ -690,7 +690,7 @@ func main() {
 
 在java中，一般的springBoot项目布局如下列情况
 
-![image-20220104223749040](C:\Users\czj\AppData\Roaming\Typora\typora-user-images\image-20220104223749040.png)
+![image-20220104223749040](.\images\image-20220104223749040.png)
 
 这样便于我们去很清晰的去了解项目，同样的，GO也有它自己的项目布局
 
@@ -1806,10 +1806,10 @@ func newobject(typ *_type) unsafe.Pointer {
 
 1.如果调用了模块外的方法使用内部自定的type，需要把变量首字母大写，否则会认定为内部变量，无法使外部得到
 
-![image-20220111232646070](C:\Users\czj\AppData\Roaming\Typora\typora-user-images\image-20220111232646070.png)
+![image-20220111232646070](.\images\image-20220111232646070.png)
 
-![image-20220111232707249](C:\Users\czj\AppData\Roaming\Typora\typora-user-images\image-20220111232707249.png)
+![image-20220111232707249](.\images\image-20220111232707249.png)
 
-![image-20220111232730650](C:\Users\czj\AppData\Roaming\Typora\typora-user-images\image-20220111232730650.png)
+![image-20220111232730650](.\images\image-20220111232730650.png)
 
-![image-20220111232741241](C:\Users\czj\AppData\Roaming\Typora\typora-user-images\image-20220111232741241.png)
+![image-20220111232741241](.\images\image-20220111232741241.png)
